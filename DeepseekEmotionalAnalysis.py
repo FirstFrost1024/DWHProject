@@ -12,7 +12,7 @@ from tqdm import tqdm
 
 # ===== 基本配置 =====
 API_KEY = "ollama"  # 本地部署模型不需要 key，随便写
-API_ENDPOINT = "http://firstfrost.online:11434/v1/"  # 你的 OpenAI 兼容网关
+API_ENDPOINT = "http://127.0.0.1:11434/v1/"  # 你的 OpenAI 兼容网关
 MODEL_NAME = "gemma3:27b"  # 你的本地模型名称（按实际调整）
 
 INPUT_CSV = "weibo_cleaned.csv"
@@ -22,7 +22,7 @@ OS_MAKEDIRS = True                 # 若上级目录不存在则自动创建
 ENCODINGS_TO_TRY = [None, "utf-8", "gbk", "gb2312"]  # 自动编码探测顺序(None=默认)
 
 # ===== 并发/速率/重试 =====
-MAX_WORKERS = max(4, os.cpu_count() or 4)  # 线程数：先按 CPU 开，外网/FRP 建议 4~16 测
+MAX_WORKERS = 8  # 线程数：先按 CPU 开，外网/FRP 建议 4~16 测
 QPS = 5               # 每秒最多请求数（外网/FRP建议保守；内网可更高）
 TIMEOUT = 30          # 每次请求超时秒
 MAX_RETRIES = 5       # 最大重试次数
