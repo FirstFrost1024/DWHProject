@@ -1,0 +1,1819 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20252.25.0514.2217                               -->
+<workbook original-version='18.1' source-build='2025.2.0 (20252.25.0514.2217)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AnimationOnByDefault />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='deepseek_weibo_output_local' inline='true' name='federated.0kulvfv1498ehv10j6q4y0p9i7ku' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='deepseek_weibo_output_local' name='textscan.0ddmidf03xho3u10zn54b0zci7ui'>
+            <connection class='textscan' directory='C:/Users/user/Desktop/Project/others/deepseek' filename='deepseek_weibo_output_local.csv' password='' server='' />
+          </named-connection>
+          <named-connection caption='deepseek_ins_output_local' name='textscan.0dbjdd50sgbmgn168wvsc07g5pds'>
+            <connection class='textscan' directory='C:/Users/user/Desktop/Project/others/ins' filename='deepseek_ins_output_local.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.0ddmidf03xho3u10zn54b0zci7ui' name='deepseek_weibo_output_local.csv' table='[deepseek_weibo_output_local#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='zh_CN' separator=','>
+            <column datatype='integer' name='id' ordinal='0' />
+            <column datatype='string' name='bid' ordinal='1' />
+            <column datatype='integer' name='user_id' ordinal='2' />
+            <column datatype='string' name='用户昵称' ordinal='3' />
+            <column datatype='string' name='微博正文' ordinal='4' />
+            <column datatype='string' name='头条文章url' ordinal='5' />
+            <column datatype='string' name='发布位置' ordinal='6' />
+            <column datatype='string' name='艾特用户' ordinal='7' />
+            <column datatype='string' name='话题' ordinal='8' />
+            <column datatype='real' name='转发数' ordinal='9' />
+            <column datatype='real' name='评论数' ordinal='10' />
+            <column datatype='real' name='点赞数' ordinal='11' />
+            <column datatype='date' name='发布时间' ordinal='12' />
+            <column datatype='string' name='发布工具' ordinal='13' />
+            <column datatype='string' name='微博图片url' ordinal='14' />
+            <column datatype='string' name='微博视频url' ordinal='15' />
+            <column datatype='real' name='retweet_id' ordinal='16' />
+            <column datatype='string' name='ip' ordinal='17' />
+            <column datatype='string' name='情感结果' ordinal='18' />
+            <column datatype='real' name='情感得分' ordinal='19' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[deepseek_weibo_output_local.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;zh_Hans_CN&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;¥&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;zh_CN&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[id]</local-name>
+            <parent-name>[deepseek_weibo_output_local.csv]</parent-name>
+            <remote-alias>id</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[deepseek_weibo_output_local.csv_042D5B1C29614873887C09A194F08494]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>bid</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[bid]</local-name>
+            <parent-name>[deepseek_weibo_output_local.csv]</parent-name>
+            <remote-alias>bid</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LZH_RCN' />
+            <object-id>[deepseek_weibo_output_local.csv_042D5B1C29614873887C09A194F08494]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>user_id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[user_id]</local-name>
+            <parent-name>[deepseek_weibo_output_local.csv]</parent-name>
+            <remote-alias>user_id</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[deepseek_weibo_output_local.csv_042D5B1C29614873887C09A194F08494]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>用户昵称</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[用户昵称]</local-name>
+            <parent-name>[deepseek_weibo_output_local.csv]</parent-name>
+            <remote-alias>用户昵称</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LZH_RCN' />
+            <object-id>[deepseek_weibo_output_local.csv_042D5B1C29614873887C09A194F08494]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>微博正文</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[微博正文]</local-name>
+            <parent-name>[deepseek_weibo_output_local.csv]</parent-name>
+            <remote-alias>微博正文</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LZH_RCN' />
+            <object-id>[deepseek_weibo_output_local.csv_042D5B1C29614873887C09A194F08494]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>头条文章url</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[头条文章url]</local-name>
+            <parent-name>[deepseek_weibo_output_local.csv]</parent-name>
+            <remote-alias>头条文章url</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LZH_RCN' />
+            <object-id>[deepseek_weibo_output_local.csv_042D5B1C29614873887C09A194F08494]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>发布位置</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[发布位置]</local-name>
+            <parent-name>[deepseek_weibo_output_local.csv]</parent-name>
+            <remote-alias>发布位置</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LZH_RCN' />
+            <object-id>[deepseek_weibo_output_local.csv_042D5B1C29614873887C09A194F08494]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>艾特用户</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[艾特用户]</local-name>
+            <parent-name>[deepseek_weibo_output_local.csv]</parent-name>
+            <remote-alias>艾特用户</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LZH_RCN' />
+            <object-id>[deepseek_weibo_output_local.csv_042D5B1C29614873887C09A194F08494]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>话题</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[话题]</local-name>
+            <parent-name>[deepseek_weibo_output_local.csv]</parent-name>
+            <remote-alias>话题</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LZH_RCN' />
+            <object-id>[deepseek_weibo_output_local.csv_042D5B1C29614873887C09A194F08494]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>转发数</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[转发数]</local-name>
+            <parent-name>[deepseek_weibo_output_local.csv]</parent-name>
+            <remote-alias>转发数</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[deepseek_weibo_output_local.csv_042D5B1C29614873887C09A194F08494]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>评论数</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[评论数]</local-name>
+            <parent-name>[deepseek_weibo_output_local.csv]</parent-name>
+            <remote-alias>评论数</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[deepseek_weibo_output_local.csv_042D5B1C29614873887C09A194F08494]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>点赞数</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[点赞数]</local-name>
+            <parent-name>[deepseek_weibo_output_local.csv]</parent-name>
+            <remote-alias>点赞数</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[deepseek_weibo_output_local.csv_042D5B1C29614873887C09A194F08494]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>发布时间</remote-name>
+            <remote-type>135</remote-type>
+            <local-name>[发布时间]</local-name>
+            <parent-name>[deepseek_weibo_output_local.csv]</parent-name>
+            <remote-alias>发布时间</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[deepseek_weibo_output_local.csv_042D5B1C29614873887C09A194F08494]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>发布工具</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[发布工具]</local-name>
+            <parent-name>[deepseek_weibo_output_local.csv]</parent-name>
+            <remote-alias>发布工具</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LZH_RCN' />
+            <object-id>[deepseek_weibo_output_local.csv_042D5B1C29614873887C09A194F08494]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>微博图片url</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[微博图片url]</local-name>
+            <parent-name>[deepseek_weibo_output_local.csv]</parent-name>
+            <remote-alias>微博图片url</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LZH_RCN' />
+            <object-id>[deepseek_weibo_output_local.csv_042D5B1C29614873887C09A194F08494]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>微博视频url</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[微博视频url]</local-name>
+            <parent-name>[deepseek_weibo_output_local.csv]</parent-name>
+            <remote-alias>微博视频url</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LZH_RCN' />
+            <object-id>[deepseek_weibo_output_local.csv_042D5B1C29614873887C09A194F08494]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>retweet_id</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[retweet_id]</local-name>
+            <parent-name>[deepseek_weibo_output_local.csv]</parent-name>
+            <remote-alias>retweet_id</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[deepseek_weibo_output_local.csv_042D5B1C29614873887C09A194F08494]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ip</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[ip]</local-name>
+            <parent-name>[deepseek_weibo_output_local.csv]</parent-name>
+            <remote-alias>ip</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LZH_RCN' />
+            <object-id>[deepseek_weibo_output_local.csv_042D5B1C29614873887C09A194F08494]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>情感结果</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[情感结果]</local-name>
+            <parent-name>[deepseek_weibo_output_local.csv]</parent-name>
+            <remote-alias>情感结果</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LZH_RCN' />
+            <object-id>[deepseek_weibo_output_local.csv_042D5B1C29614873887C09A194F08494]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>情感得分</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[情感得分]</local-name>
+            <parent-name>[deepseek_weibo_output_local.csv]</parent-name>
+            <remote-alias>情感得分</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[deepseek_weibo_output_local.csv_042D5B1C29614873887C09A194F08494]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='发布量' datatype='integer' name='[Calculation_2765210228282310656]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='COUNTD([id])' />
+      </column>
+      <column caption='deepseek_weibo_output_local.csv' datatype='table' name='[__tableau_internal_object_id__].[deepseek_weibo_output_local.csv_042D5B1C29614873887C09A194F08494]' role='measure' type='quantitative' />
+      <column caption='Bid' datatype='string' name='[bid]' role='dimension' type='nominal' />
+      <column caption='Id' datatype='integer' name='[id]' role='dimension' type='ordinal' />
+      <column caption='Ip' datatype='string' name='[ip]' role='dimension' type='nominal' />
+      <column caption='Retweet Id' datatype='real' name='[retweet_id]' role='dimension' type='ordinal' />
+      <column caption='User Id' datatype='integer' name='[user_id]' role='dimension' type='ordinal' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='zh_CN' class='hyper' dbname='C:/Users/user/AppData/Local/Temp/TableauTemp/#TableauTemp_1y6t1pu1swea4y153pl8h1483c4d.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='09/25/2025 02:31:28 AM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>id</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[id]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>id</remote-alias>
+              <ordinal>0</ordinal>
+              <family>deepseek_weibo_output_local.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>82171</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[deepseek_weibo_output_local.csv_042D5B1C29614873887C09A194F08494]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>bid</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[bid]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>bid</remote-alias>
+              <ordinal>1</ordinal>
+              <family>deepseek_weibo_output_local.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>82171</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LZH_RCN' />
+              <object-id>[deepseek_weibo_output_local.csv_042D5B1C29614873887C09A194F08494]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>user_id</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[user_id]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>user_id</remote-alias>
+              <ordinal>2</ordinal>
+              <family>deepseek_weibo_output_local.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>11585</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[deepseek_weibo_output_local.csv_042D5B1C29614873887C09A194F08494]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>用户昵称</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[用户昵称]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>用户昵称</remote-alias>
+              <ordinal>3</ordinal>
+              <family>deepseek_weibo_output_local.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>11465</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LZH_RCN' />
+              <object-id>[deepseek_weibo_output_local.csv_042D5B1C29614873887C09A194F08494]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>微博正文</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[微博正文]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>微博正文</remote-alias>
+              <ordinal>4</ordinal>
+              <family>deepseek_weibo_output_local.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>33809</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LZH_RCN' />
+              <object-id>[deepseek_weibo_output_local.csv_042D5B1C29614873887C09A194F08494]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>头条文章url</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[头条文章url]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>头条文章url</remote-alias>
+              <ordinal>5</ordinal>
+              <family>deepseek_weibo_output_local.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LZH_RCN' />
+              <object-id>[deepseek_weibo_output_local.csv_042D5B1C29614873887C09A194F08494]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>发布位置</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[发布位置]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>发布位置</remote-alias>
+              <ordinal>6</ordinal>
+              <family>deepseek_weibo_output_local.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>292</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LZH_RCN' />
+              <object-id>[deepseek_weibo_output_local.csv_042D5B1C29614873887C09A194F08494]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>艾特用户</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[艾特用户]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>艾特用户</remote-alias>
+              <ordinal>7</ordinal>
+              <family>deepseek_weibo_output_local.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1408</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LZH_RCN' />
+              <object-id>[deepseek_weibo_output_local.csv_042D5B1C29614873887C09A194F08494]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>话题</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[话题]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>话题</remote-alias>
+              <ordinal>8</ordinal>
+              <family>deepseek_weibo_output_local.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4055</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LZH_RCN' />
+              <object-id>[deepseek_weibo_output_local.csv_042D5B1C29614873887C09A194F08494]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>转发数</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[转发数]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>转发数</remote-alias>
+              <ordinal>9</ordinal>
+              <family>deepseek_weibo_output_local.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>411</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[deepseek_weibo_output_local.csv_042D5B1C29614873887C09A194F08494]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>评论数</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[评论数]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>评论数</remote-alias>
+              <ordinal>10</ordinal>
+              <family>deepseek_weibo_output_local.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>540</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[deepseek_weibo_output_local.csv_042D5B1C29614873887C09A194F08494]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>点赞数</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[点赞数]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>点赞数</remote-alias>
+              <ordinal>11</ordinal>
+              <family>deepseek_weibo_output_local.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3543</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[deepseek_weibo_output_local.csv_042D5B1C29614873887C09A194F08494]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>发布时间</remote-name>
+              <remote-type>135</remote-type>
+              <local-name>[发布时间]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>发布时间</remote-alias>
+              <ordinal>12</ordinal>
+              <family>deepseek_weibo_output_local.csv</family>
+              <local-type>datetime</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>24067</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[deepseek_weibo_output_local.csv_042D5B1C29614873887C09A194F08494]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>发布工具</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[发布工具]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>发布工具</remote-alias>
+              <ordinal>13</ordinal>
+              <family>deepseek_weibo_output_local.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1855</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LZH_RCN' />
+              <object-id>[deepseek_weibo_output_local.csv_042D5B1C29614873887C09A194F08494]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>微博图片url</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[微博图片url]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>微博图片url</remote-alias>
+              <ordinal>14</ordinal>
+              <family>deepseek_weibo_output_local.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>13793</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LZH_RCN' />
+              <object-id>[deepseek_weibo_output_local.csv_042D5B1C29614873887C09A194F08494]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>微博视频url</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[微博视频url]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>微博视频url</remote-alias>
+              <ordinal>15</ordinal>
+              <family>deepseek_weibo_output_local.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>16276</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LZH_RCN' />
+              <object-id>[deepseek_weibo_output_local.csv_042D5B1C29614873887C09A194F08494]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>retweet_id</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[retweet_id]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>retweet_id</remote-alias>
+              <ordinal>16</ordinal>
+              <family>deepseek_weibo_output_local.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1502</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[deepseek_weibo_output_local.csv_042D5B1C29614873887C09A194F08494]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>ip</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[ip]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>ip</remote-alias>
+              <ordinal>17</ordinal>
+              <family>deepseek_weibo_output_local.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LZH_RCN' />
+              <object-id>[deepseek_weibo_output_local.csv_042D5B1C29614873887C09A194F08494]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>情感结果</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[情感结果]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>情感结果</remote-alias>
+              <ordinal>18</ordinal>
+              <family>deepseek_weibo_output_local.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LZH_RCN' />
+              <object-id>[deepseek_weibo_output_local.csv_042D5B1C29614873887C09A194F08494]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>情感得分</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[情感得分]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>情感得分</remote-alias>
+              <ordinal>19</ordinal>
+              <family>deepseek_weibo_output_local.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>58</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[deepseek_weibo_output_local.csv_042D5B1C29614873887C09A194F08494]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' rowDisplayCount='10000' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;中国&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <field-sort-info field-sort-order-type='alphabetical-order' />
+      <object-graph>
+        <objects>
+          <object caption='deepseek_weibo_output_local.csv' id='deepseek_weibo_output_local.csv_042D5B1C29614873887C09A194F08494'>
+            <properties context=''>
+              <relation connection='textscan.0ddmidf03xho3u10zn54b0zci7ui' name='deepseek_weibo_output_local.csv' table='[deepseek_weibo_output_local#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='zh_CN' separator=','>
+                  <column datatype='integer' name='id' ordinal='0' />
+                  <column datatype='string' name='bid' ordinal='1' />
+                  <column datatype='integer' name='user_id' ordinal='2' />
+                  <column datatype='string' name='用户昵称' ordinal='3' />
+                  <column datatype='string' name='微博正文' ordinal='4' />
+                  <column datatype='string' name='头条文章url' ordinal='5' />
+                  <column datatype='string' name='发布位置' ordinal='6' />
+                  <column datatype='string' name='艾特用户' ordinal='7' />
+                  <column datatype='string' name='话题' ordinal='8' />
+                  <column datatype='real' name='转发数' ordinal='9' />
+                  <column datatype='real' name='评论数' ordinal='10' />
+                  <column datatype='real' name='点赞数' ordinal='11' />
+                  <column datatype='date' name='发布时间' ordinal='12' />
+                  <column datatype='string' name='发布工具' ordinal='13' />
+                  <column datatype='string' name='微博图片url' ordinal='14' />
+                  <column datatype='string' name='微博视频url' ordinal='15' />
+                  <column datatype='real' name='retweet_id' ordinal='16' />
+                  <column datatype='string' name='ip' ordinal='17' />
+                  <column datatype='string' name='情感结果' ordinal='18' />
+                  <column datatype='real' name='情感得分' ordinal='19' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+    <datasource caption='deepseek_ins_output_local' inline='true' name='federated.0xgkph51ic5tlo18ejj3o0jmzhgu' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='deepseek_ins_output_local' name='textscan.01ww53i0igypcn13hp5rz1rurgfo'>
+            <connection class='textscan' directory='C:/Users/user/Desktop/Project/others/ins' filename='deepseek_ins_output_local.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.01ww53i0igypcn13hp5rz1rurgfo' name='deepseek_ins_output_local.csv' table='[deepseek_ins_output_local#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='zh_CN' separator=','>
+            <column datatype='integer' name='Unnamed: 0' ordinal='0' />
+            <column datatype='real' name='帖子id' ordinal='1' />
+            <column datatype='integer' name='评论用户id' ordinal='2' />
+            <column datatype='string' name='评论用户名' ordinal='3' />
+            <column datatype='boolean' name='评论者是否认证' ordinal='4' />
+            <column datatype='real' name='评论id' ordinal='5' />
+            <column datatype='datetime' name='评论时间' ordinal='6' />
+            <column datatype='string' name='评论内容' ordinal='7' />
+            <column datatype='integer' name='评论点赞数' ordinal='8' />
+            <column datatype='integer' name='评论子回复数' ordinal='9' />
+            <column datatype='string' name='评论翻译' ordinal='10' />
+            <column datatype='string' name='情感结果' ordinal='11' />
+            <column datatype='real' name='情感得分' ordinal='12' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[deepseek_ins_output_local.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;zh_Hans_CN&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;¥&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;zh_CN&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Unnamed: 0</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Unnamed: 0]</local-name>
+            <parent-name>[deepseek_ins_output_local.csv]</parent-name>
+            <remote-alias>Unnamed: 0</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[deepseek_ins_output_local.csv_133528C5EF8E4CBBA04ABFD719788B13]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>帖子id</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[帖子id]</local-name>
+            <parent-name>[deepseek_ins_output_local.csv]</parent-name>
+            <remote-alias>帖子id</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[deepseek_ins_output_local.csv_133528C5EF8E4CBBA04ABFD719788B13]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>评论用户id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[评论用户id]</local-name>
+            <parent-name>[deepseek_ins_output_local.csv]</parent-name>
+            <remote-alias>评论用户id</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[deepseek_ins_output_local.csv_133528C5EF8E4CBBA04ABFD719788B13]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>评论用户名</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[评论用户名]</local-name>
+            <parent-name>[deepseek_ins_output_local.csv]</parent-name>
+            <remote-alias>评论用户名</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LZH_RCN' />
+            <object-id>[deepseek_ins_output_local.csv_133528C5EF8E4CBBA04ABFD719788B13]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>评论者是否认证</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[评论者是否认证]</local-name>
+            <parent-name>[deepseek_ins_output_local.csv]</parent-name>
+            <remote-alias>评论者是否认证</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[deepseek_ins_output_local.csv_133528C5EF8E4CBBA04ABFD719788B13]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>评论id</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[评论id]</local-name>
+            <parent-name>[deepseek_ins_output_local.csv]</parent-name>
+            <remote-alias>评论id</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[deepseek_ins_output_local.csv_133528C5EF8E4CBBA04ABFD719788B13]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>评论时间</remote-name>
+            <remote-type>135</remote-type>
+            <local-name>[评论时间]</local-name>
+            <parent-name>[deepseek_ins_output_local.csv]</parent-name>
+            <remote-alias>评论时间</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[deepseek_ins_output_local.csv_133528C5EF8E4CBBA04ABFD719788B13]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>评论内容</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[评论内容]</local-name>
+            <parent-name>[deepseek_ins_output_local.csv]</parent-name>
+            <remote-alias>评论内容</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LZH_RCN' />
+            <object-id>[deepseek_ins_output_local.csv_133528C5EF8E4CBBA04ABFD719788B13]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>评论点赞数</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[评论点赞数]</local-name>
+            <parent-name>[deepseek_ins_output_local.csv]</parent-name>
+            <remote-alias>评论点赞数</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[deepseek_ins_output_local.csv_133528C5EF8E4CBBA04ABFD719788B13]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>评论子回复数</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[评论子回复数]</local-name>
+            <parent-name>[deepseek_ins_output_local.csv]</parent-name>
+            <remote-alias>评论子回复数</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[deepseek_ins_output_local.csv_133528C5EF8E4CBBA04ABFD719788B13]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>评论翻译</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[评论翻译]</local-name>
+            <parent-name>[deepseek_ins_output_local.csv]</parent-name>
+            <remote-alias>评论翻译</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LZH_RCN' />
+            <object-id>[deepseek_ins_output_local.csv_133528C5EF8E4CBBA04ABFD719788B13]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>情感结果</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[情感结果]</local-name>
+            <parent-name>[deepseek_ins_output_local.csv]</parent-name>
+            <remote-alias>情感结果</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LZH_RCN' />
+            <object-id>[deepseek_ins_output_local.csv_133528C5EF8E4CBBA04ABFD719788B13]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>情感得分</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[情感得分]</local-name>
+            <parent-name>[deepseek_ins_output_local.csv]</parent-name>
+            <remote-alias>情感得分</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[deepseek_ins_output_local.csv_133528C5EF8E4CBBA04ABFD719788B13]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='累计发布量' datatype='integer' name='[Calculation_2765210228291686402]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='COUNTD(帖子id)' />
+      </column>
+      <column caption='deepseek_ins_output_local.csv' datatype='table' name='[__tableau_internal_object_id__].[deepseek_ins_output_local.csv_133528C5EF8E4CBBA04ABFD719788B13]' role='measure' type='quantitative' />
+      <column datatype='real' name='[帖子id]' role='dimension' type='ordinal' />
+      <column datatype='real' name='[评论id]' role='dimension' type='ordinal' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='zh_CN' class='hyper' dbname='C:/Users/user/AppData/Local/Temp/TableauTemp/#TableauTemp_1dirqfs0u6oa991av7bf41od63e2.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='09/25/2025 02:31:53 AM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Unnamed: 0</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Unnamed: 0]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Unnamed: 0</remote-alias>
+              <ordinal>0</ordinal>
+              <family>deepseek_ins_output_local.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2399</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[deepseek_ins_output_local.csv_133528C5EF8E4CBBA04ABFD719788B13]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>帖子id</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[帖子id]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>帖子id</remote-alias>
+              <ordinal>1</ordinal>
+              <family>deepseek_ins_output_local.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>47</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[deepseek_ins_output_local.csv_133528C5EF8E4CBBA04ABFD719788B13]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>评论用户id</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[评论用户id]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>评论用户id</remote-alias>
+              <ordinal>2</ordinal>
+              <family>deepseek_ins_output_local.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>911</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[deepseek_ins_output_local.csv_133528C5EF8E4CBBA04ABFD719788B13]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>评论用户名</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[评论用户名]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>评论用户名</remote-alias>
+              <ordinal>3</ordinal>
+              <family>deepseek_ins_output_local.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>911</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LZH_RCN' />
+              <object-id>[deepseek_ins_output_local.csv_133528C5EF8E4CBBA04ABFD719788B13]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>评论者是否认证</remote-name>
+              <remote-type>11</remote-type>
+              <local-name>[评论者是否认证]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>评论者是否认证</remote-alias>
+              <ordinal>4</ordinal>
+              <family>deepseek_ins_output_local.csv</family>
+              <local-type>boolean</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[deepseek_ins_output_local.csv_133528C5EF8E4CBBA04ABFD719788B13]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>评论id</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[评论id]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>评论id</remote-alias>
+              <ordinal>5</ordinal>
+              <family>deepseek_ins_output_local.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1303</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[deepseek_ins_output_local.csv_133528C5EF8E4CBBA04ABFD719788B13]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>评论时间</remote-name>
+              <remote-type>135</remote-type>
+              <local-name>[评论时间]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>评论时间</remote-alias>
+              <ordinal>6</ordinal>
+              <family>deepseek_ins_output_local.csv</family>
+              <local-type>datetime</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>2399</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[deepseek_ins_output_local.csv_133528C5EF8E4CBBA04ABFD719788B13]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>评论内容</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[评论内容]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>评论内容</remote-alias>
+              <ordinal>7</ordinal>
+              <family>deepseek_ins_output_local.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1522</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LZH_RCN' />
+              <object-id>[deepseek_ins_output_local.csv_133528C5EF8E4CBBA04ABFD719788B13]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>评论点赞数</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[评论点赞数]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>评论点赞数</remote-alias>
+              <ordinal>8</ordinal>
+              <family>deepseek_ins_output_local.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>51</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[deepseek_ins_output_local.csv_133528C5EF8E4CBBA04ABFD719788B13]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>评论子回复数</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[评论子回复数]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>评论子回复数</remote-alias>
+              <ordinal>9</ordinal>
+              <family>deepseek_ins_output_local.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>12</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[deepseek_ins_output_local.csv_133528C5EF8E4CBBA04ABFD719788B13]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>评论翻译</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[评论翻译]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>评论翻译</remote-alias>
+              <ordinal>10</ordinal>
+              <family>deepseek_ins_output_local.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1520</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LZH_RCN' />
+              <object-id>[deepseek_ins_output_local.csv_133528C5EF8E4CBBA04ABFD719788B13]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>情感结果</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[情感结果]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>情感结果</remote-alias>
+              <ordinal>11</ordinal>
+              <family>deepseek_ins_output_local.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LZH_RCN' />
+              <object-id>[deepseek_ins_output_local.csv_133528C5EF8E4CBBA04ABFD719788B13]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>情感得分</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[情感得分]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>情感得分</remote-alias>
+              <ordinal>12</ordinal>
+              <family>deepseek_ins_output_local.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>20</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[deepseek_ins_output_local.csv_133528C5EF8E4CBBA04ABFD719788B13]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;中国&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <object-graph>
+        <objects>
+          <object caption='deepseek_ins_output_local.csv' id='deepseek_ins_output_local.csv_133528C5EF8E4CBBA04ABFD719788B13'>
+            <properties context=''>
+              <relation connection='textscan.01ww53i0igypcn13hp5rz1rurgfo' name='deepseek_ins_output_local.csv' table='[deepseek_ins_output_local#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='zh_CN' separator=','>
+                  <column datatype='integer' name='Unnamed: 0' ordinal='0' />
+                  <column datatype='real' name='帖子id' ordinal='1' />
+                  <column datatype='integer' name='评论用户id' ordinal='2' />
+                  <column datatype='string' name='评论用户名' ordinal='3' />
+                  <column datatype='boolean' name='评论者是否认证' ordinal='4' />
+                  <column datatype='real' name='评论id' ordinal='5' />
+                  <column datatype='datetime' name='评论时间' ordinal='6' />
+                  <column datatype='string' name='评论内容' ordinal='7' />
+                  <column datatype='integer' name='评论点赞数' ordinal='8' />
+                  <column datatype='integer' name='评论子回复数' ordinal='9' />
+                  <column datatype='string' name='评论翻译' ordinal='10' />
+                  <column datatype='string' name='情感结果' ordinal='11' />
+                  <column datatype='real' name='情感得分' ordinal='12' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='工作表 1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>&lt;微博累计发布量&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='deepseek_weibo_output_local' name='federated.0kulvfv1498ehv10j6q4y0p9i7ku' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0kulvfv1498ehv10j6q4y0p9i7ku'>
+            <column caption='发布量' datatype='integer' name='[Calculation_2765210228282310656]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='COUNTD([id])' />
+            </column>
+            <column-instance column='[Calculation_2765210228282310656]' derivation='User' name='[cum:usr:Calculation_2765210228282310656:qk]' pivot='key' type='quantitative'>
+              <table-calc aggregation='Sum' ordering-type='Rows' type='CumTotal' />
+            </column-instance>
+            <column-instance column='[发布时间]' derivation='Day' name='[dy:发布时间:ok]' pivot='key' type='ordinal' />
+            <column caption='Id' datatype='integer' name='[id]' role='dimension' type='ordinal' />
+            <column-instance column='[发布时间]' derivation='Month' name='[mn:发布时间:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[发布时间]' derivation='Day-Trunc' name='[tdy:发布时间:qk]' pivot='key' type='quantitative' />
+            <column datatype='datetime' name='[发布时间]' role='dimension' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.0kulvfv1498ehv10j6q4y0p9i7ku].[mn:发布时间:qk]' included-values='in-range'>
+            <min>1</min>
+            <max>12</max>
+          </filter>
+          <filter class='quantitative' column='[federated.0kulvfv1498ehv10j6q4y0p9i7ku].[tdy:发布时间:qk]' included-values='in-range'>
+            <min>#2025-06-02 00:00:00#</min>
+            <max>#2025-09-17 00:00:00#</max>
+          </filter>
+          <slices>
+            <column>[federated.0kulvfv1498ehv10j6q4y0p9i7ku].[mn:发布时间:qk]</column>
+            <column>[federated.0kulvfv1498ehv10j6q4y0p9i7ku].[tdy:发布时间:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='label'>
+            <format attr='text-format' field='[federated.0kulvfv1498ehv10j6q4y0p9i7ku].[dy:发布时间:ok]' value='' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Area' />
+          </pane>
+        </panes>
+        <rows>[federated.0kulvfv1498ehv10j6q4y0p9i7ku].[cum:usr:Calculation_2765210228282310656:qk]</rows>
+        <cols>[federated.0kulvfv1498ehv10j6q4y0p9i7ku].[tdy:发布时间:qk]</cols>
+      </table>
+      <simple-id uuid='{10210007-3B42-4031-9DE4-D5A182632FF6}' />
+    </worksheet>
+    <worksheet name='工作表 2'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>&lt;Ins累计发布量&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='deepseek_ins_output_local' name='federated.0xgkph51ic5tlo18ejj3o0jmzhgu' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0xgkph51ic5tlo18ejj3o0jmzhgu'>
+            <column caption='累计发布量' datatype='integer' name='[Calculation_2765210228291686402]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='COUNTD(帖子id)' />
+            </column>
+            <column-instance column='[Calculation_2765210228291686402]' derivation='User' name='[cum:usr:Calculation_2765210228291686402:qk:1]' pivot='key' type='quantitative'>
+              <table-calc aggregation='Sum' ordering-field='[federated.0xgkph51ic5tlo18ejj3o0jmzhgu].[tdy:评论时间:qk]' ordering-type='Field' type='CumTotal' />
+            </column-instance>
+            <column-instance column='[评论时间]' derivation='Day-Trunc' name='[tdy:评论时间:qk]' pivot='key' type='quantitative' />
+            <column datatype='real' name='[帖子id]' role='dimension' type='ordinal' />
+            <column datatype='datetime' name='[评论时间]' role='dimension' type='ordinal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.0xgkph51ic5tlo18ejj3o0jmzhgu].[cum:usr:Calculation_2765210228291686402:qk:1]' scope='rows' value='累计发布量' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Area' />
+          </pane>
+        </panes>
+        <rows>[federated.0xgkph51ic5tlo18ejj3o0jmzhgu].[cum:usr:Calculation_2765210228291686402:qk:1]</rows>
+        <cols>[federated.0xgkph51ic5tlo18ejj3o0jmzhgu].[tdy:评论时间:qk]</cols>
+      </table>
+      <simple-id uuid='{A1288273-F550-4EDC-9A63-75F2E449783B}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='51'>
+    <window class='worksheet' name='工作表 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.0kulvfv1498ehv10j6q4y0p9i7ku].[tdy:发布时间:qk]' show-domain='false' show-null-ctrls='false' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.0kulvfv1498ehv10j6q4y0p9i7ku].[dy:发布时间:ok]</field>
+            <field>[federated.0kulvfv1498ehv10j6q4y0p9i7ku].[yr:发布时间:ok]</field>
+          </color-one-way>
+        </highlight>
+        <floating-toolbar-visibility value='1' />
+      </viewpoint>
+      <simple-id uuid='{0E51A5E5-4A02-4304-8C35-6B07E5839AF1}' />
+    </window>
+    <window class='worksheet' maximized='true' name='工作表 2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.0xgkph51ic5tlo18ejj3o0jmzhgu].[yr:评论时间:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{AD542050-278B-4C77-B9E4-4F91A322497C}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='384' name='工作表 1' width='384'>
+      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
+    </thumbnail>
+    <thumbnail height='384' name='工作表 2' width='384'>
+      iVBORw0KGgoAAAANSUhEUgAAAYAAAAGACAYAAACkx7W/AAAACXBIWXMAAA7DAAAOwwHHb6hk
+      AAAgAElEQVR4nO3deXBc14Lf9+/tFftCAgS4gvsiUpRIiZIoPUmUNNpG8zx27HGlkrjK/0xV
+      alyJ41QmNc4krtjjcXmS1PiPuMo1nqqU7ZrKe+Pn2PP85s3TQoraRYr7Bq4CAWJvNIDet7uc
+      /NGNJkCBlEBiIXB/nyqwiMbt2+fc7j6/e88991zLGGMQERHfCSx1AUREZGkoAEREfEoBICLi
+      UwoAERGfWlYB4LruUhdBRGTFWFYBoAFLIiLzZ1kFgIiIzB8FgIiITykARER8SgEgIuJTCgAR
+      EZ9SAIiI+JQCQETEpxQAIiI+pQAQEfEpBYCIiE8pAEREfEoBICLiUwoAERGfUgCIiPiUAkBE
+      xKcUACIiPqUAEBHxKQWAiIhPKQBERHxKASAi4lOhxXiRXDLOuYtXKNoOazbuYO/2TfRev8BA
+      PI0FbNi6h661LXSfO83IZJrOrt08sX0D1mIUTkTEpxblCCCRSLP3wHMcefVVBm9dpuh43Owb
+      5rlDhzh06BAbOlpJDN4kZjfw2pEjjN48TyJvL0bRRER8a1GOANZ1bQEgMzlM3gsTClqkE+P0
+      3O5lVXsnHaujDA4Os237CwSCIbZtaGUonqN1YzOu61bX4zgOjuMsRpFFRFa8RQkAMNy6fIZr
+      gxne+rXXCAUsXnv9DXL5ArcufMm3q3dR77qEgkEAwpEQnuuVn2lMdS3BYJBQaJGKLCKywi1K
+      azp44wIDuRp+/a1nCFgWGENrWwerLIu1ne18cPwk69fVE0+kWNfSRjyepWVPtFzAaQ2+4zhY
+      ls4MiIjMh0UJgO7uK5TqOjn+8ShEGnjluT18fPRLmlavIjE2zJb9L7G+s5aLf/Uh2eE1xDNB
+      9rbULkbRRER8yzLT+1gWlSGfzRGuqSUULJ+LNp5LJpenvr6+fKRwD8dx1AUkIjJPljAA5k4B
+      ICIyf3QhmIiITykARER8SgEgIuJTCgAREZ9SAIiI+JQCQETEpxQAIiI+pQAQEfEpBYCIiE8p
+      AEREfEoBICLiUwoAERGfUgCIiPiUAkBExKcUACIiPqUAEBHxKQWAiIhPKQBERHxKASAi4lMK
+      ABERn1IAiIj4lAJARMSnFAAiIj6lABAR8SkFgIiITykARER8SgEgIuJTCgAREZ9SAIiI+JQC
+      QETEpxQAIiI+pQAQEfEpBYCIiE8pAEREfEoBICLiUwoAERGfUgCIiPiUAkBExKcUACIiPqUA
+      EBHxKQWAiIhPKQBERHxKASAi4lMKABERn1IAiIj4lAJARMSnFAAiIj6lABAR8SkFgIiITykA
+      RER8SgEgIuJTCgAREZ9SAIiI+JQCQETEpxQAIiI+pQAQEfGp0GK8SC4Z59zFKxRthzUbd7B3
+      +yYSI7c5091DpLaJF55/lnDAo/vcaUYm03R27eaJ7RuwFqNwIiI+tShHAFYoylPPPM+RV19l
+      8NZliqUsX5+9xSuvvsZT29v48uRFhm9cIFe3jteOHCE3eI3hZH4xiiYi4luLcgRQW9+IMR5X
+      z50g3LKOSGkSq6mDSChAqHUtdr6PsXGXdU/sIxAMsa6jkfHJAuuaaymVStX1uK6LbduLUWQR
+      kRVvUQLAc4p8cvRDVm/Zz5EDmwjkhjGeV/27MQbLAq/ymOd6WIFyB1A4HK4uFwgECIUWpcgi
+      IiveonQBXTn1Bev2vcT+XV0ELAvq2rETgxhjSI31Em1ay9q1a+i7MwgY+oYm6VxdB4BlWdUf
+      ERGZP5Yxxiz0i5z76mPiOUPAAiINvPLiISb6r3H62iDBYIgjrx0hGvA49eWnJAs2zZ1bOfTk
+      ju+cBHYcR0cAIiLzZFECYL4oAERE5o+uAxAR8SkFgIiITykARER8SgEgIuJTCgAREZ9SAIiI
+      +JQCQETEpxQAIiI+pQAQEfEpBYCIiE8pAEREfEoBICLiUwoAERGfUgCIiPiUAkBExKcUACIi
+      PqUAEBHxKQWAiIhPKQBERHxKASAi4lMKABERn1IAiIj4lAJARMSnFAAiIj6lABAR8SkFgIiI
+      TykARER8SgEgIuJTCgAREZ9SAIiI+JQCQETEpxQAIiI+pQAQEfEpBYCIiE8pAEREfEoBICLi
+      UwoAERGfUgCIiPiUAkBExKcUACIiPqUAEBHxKQWAiIhPKQBERHxKASAi4lMKABERn1IAiIj4
+      lAJARMSnFAAiIj6lABAR8SkFgIiITykARER8SgEgIuJTCgAREZ9SAIiI+JQCQETEpxQAIiI+
+      pQAQEfGp0GK9kGsXGE/mWdPWCkA6Mc5EMgNA06p2WhvrSMRH6B+Os2nrdprraxaraCIivrQo
+      RwDjQz18cPRDPv78dPWxkye+omTb2LaN53kUkiN89s0V2tta+OTYMQq2txhFExHxrUU5Amhu
+      38Dbb3fw4Qenqo85hNm+bRuWZQFw4+w59hw4ROfaJvas6+HORJadHY0z1mOMwXGcxSiyiMiK
+      91AB4Nl5Tpy+wouHny3/7hY5efoSh59/dvYXCUeAmQ13W0OYo0c/IpfJsv/wa+TyRdbU1QLQ
+      0BhlPF9evlgsVp9jjCEYDD5MkUVE5B5zCgC3lOb9X36EG6qja2MbP/vzn2BFm2moq2XHji1z
+      euFnf/QGAE4hxYefnmXrqjD5QhGaw+SzNpGmckMfjUarz3Ech1Bo0U5biIisaHM6BxAI1LB9
+      51o6u/bQUhNlx4Fn2L2hgzWdnVgB677Py6aTxGJxspkMsdgYdjHFyW8ukM3l6b3ZTV3rGrq2
+      b6f73Bmy2RRX+ifZ1NbwyJUTEZH7m9PutFX9B8DjwskvyIyncUMRtu87yNaurlmfl01NMjqR
+      ZtfuLkZHYzS07GbnlnYuXzxPw+p1vLKvi4AFh/fbnD9/hcNHXqc2rBGqIiILyTLGmB+8tGNz
+      /cZpks46OiIpJgNRQqk0pUgdLc119w2A+aIuIBGR+TOn1tQzDlfOX2bSGcDauZ6rN05TKsCu
+      pw/Q0ly3UGUUEZEFMLcjgGl6enrYunUrAOlkiuHRGDt2buf+ZwIenY4ARETmz0MEgMFxXDzP
+      IxKJVB91XXfBh2gqAERE5s+cW9NSbpxPvunh0J4OLg8liYQDBCN17Nw+t2GgIiKytOY81CZc
+      28T69lW4xiYcbqCpqYlrZ78inrUXonwiIrJA5nwEYFlQyk5wsucOVnAVE/VBGts66blxjbYD
+      TxJ8wPUAIiLy+JhTANi5Cf6ff/MTtu9/gf1P7cNxV9HSEgbACoRQ2y8isnzM6SSwMYZSboKf
+      /Nm/xw4YSsUQtXUhCNbyN37rb9FaF17IsuoksIjIPHqIUUAlurv72bKhiS9PXeb5l35EY83C
+      NvxTFAAiIvPnIeZbCNDQUEttUzuvv3KYoTt9uA91JYGIiCylh7oQrFTIE4jUEpoWH+Pj46xa
+      tRprAc8D6AhARGT+zPkIwC7kuPTN10zkC4yNJzGAV5zgz376n9GBgIjI8jGn3WnjOfzVX/yM
+      bXsO4mbH+Y8/+znb9j3LKnuQZ159Q6OARESWkTl1AXlukWTaJlIYJ1/TQCxhk7z2OUevTvJ7
+      //1vEw4ubAKoC0hEZP7MKQDs3Di/+Mvj1NeEaNu8hfh4iu1bt1Frx4lba9i/rXMhy6oAEBGZ
+      R3M6BxCqaeGNt95g15YNjE9MMjHcz42b39Ky6QmidhJPJwFERJaNud0RzApw5dRndPeM8tZ/
+      +XfZ9GqY9OQoX31ynD0HnwVjWNBhQCIiMm/mPAzUGINdyGNFawlXzvoazyU2NsGajnbdD0BE
+      ZJmY8zBQy7KI1NZy88oVnKnHAkE6FrjxFxGR+fWQd163MLaNN79lERGRRTTn6wC++vRj8m6A
+      kYFB+ifGqyuoa+nkhWf26VoAEZFlYo4d6hZbtu/GMVATCLJ2+zampoELhmvUBSQisozMbRRQ
+      IMi6jZsAsDNZNm7ahJtJUDRRWhprF6SAIiKyMOZ2DsAYrpz6nG+HJsnn09zo7qan9w4/+3d/
+      wsXbsQUqooiILIQ5BYAxHg1rutiytgWCQRrq62lobObNd3/MhrbGhSqjiIgsgIeaDhognUxR
+      39z0sMOIHoquAxARmT9zbL8Nnlce/NlYafw916WYmeTG7YH5L52IiCyYuQ0DdUr8+Z/9GwpO
+      kPX7nuPVvWv5dz/5S9asrmXfi+8sVBlFRGQBzK0LyLPpvnadaLAOYyXoHfFY217DqtZOOjvb
+      FnwYqLqARETmz5xb056rFxhPGmrWtNNEnv6kx8XMWfLeav7uf/WeLgQTEVkm5hwAW/c8xZ5g
+      HZOJQYbHS2QniqzftomO9ifU+IuILCNzOwdgPG5cPkumEGD9zl04JQs7FyOXbKJ2R91ClVFE
+      RBbAQw8DnWLbNqGQRW/vEJu3bNJ00CIiy8QjB8AUYwzWAt8MRgEgIjJ/5u06roVu/EVEZH4t
+      5oW8IiLyGFEAiIj4lAJARMSnFAAiIj6lABAR8SkFgIiITykARER8SgEgIuJTCgAREZ9SAIiI
+      +JQCQETEpxQAIiI+pQAQEfEpBYCIiE8pAEREfEoBICLiUwoAERGfUgCIiPiUAkBExKcUACIi
+      PqUAEBHxqUULANcuEItP3v29lOfqlUv0DY1hKo8l4iNcunSZZLawWMUSEfGtRQmA8aEePjj6
+      IR9/frryiOGTox9Q09LO6I3TXL0zTiE5wmffXKG9rYVPjh2jYHuLUTQREd8KLcaLNLdv4O23
+      O/jwg1PlB0qTFMMdbF7XycbVL3Lsy0uEWg17Dhyic20Te9b1cGciy86OxhnrMcbgOM5iFFlE
+      ZMVblAAIhSPAtIa7kMWqa8CyIBiKYuGSy9usqasFoKExyni+vHyxWKw+zRhDMBhcjCKLiKx4
+      ixIA3xGtxcsNYQDXtTHGoiYSJl8oQnOYfNYm0lRu6KPRaPVpjuMQCi1NkUVEVppFOQeQTSeJ
+      xeJkMxlisTHs0CpChQHGElmunT1B57Y9dG3fTve5M2SzKa70T7KprWExiiYi4luWMcZ8/2KP
+      JjbYy+hEuvJbgG27dhPx8pw9f5GGto08sX0jAPGhXq7fHmbnvv20N9d/Zz06AhARmT+LEgDz
+      RQEgIjJ/dCGYiIhPKQBERHxKASAi4lMKABERn1IAiIj4lAJARMSnFAAiIj6lABAR8SkFgIiI
+      TykARER8SgEgIuJTCgAREZ9SAIiI+JQCQETEpxQAIiI+pQAQEfEpBYCIiE8pAEREfEoBICLi
+      UwoAERGfUgCIiPiUAkBExKcUACIiPqUAEBHxKQWAiIhPKQBERHxKASAi4lMKABERn1IAiIj4
+      lAJARMSnFAAiIj6lABAR8SkFgIiITykARER8SgEgIuJTCgAREZ9SAIiI+JQCQETEpxQAIiI+
+      pQAQEfEpBYCIiE8pAEREfEoBICLiUwoAERGfUgCIiPiUAkBExKcUACIiPqUAEBHxKQWAiIhP
+      KQBERHxKASAi4lMKABERn1IAiIj4lAJARMSnFAAiIj6lABAR8anHKgCM55LPFzDGLHVRRERW
+      vNBSvfDXx39F1otgAV279rNlTR0fffgxDc1NZJwwbx45TNCylqp4IiIr3pIFQKoU4K23Xseq
+      NPIDV0/RufsQT2/v4NznxxhOFNjQWrtUxRMRWfGWLADc3CQfHzsG4VoOH36B8ckk7U88BVh0
+      rGlkPFkOgFKpVO0S8jwP27aXqsgiIivKkgXAO7/5twFDKtbHJ1+cYmNdAM/zAHBtF6u2fGQQ
+      Doerz3Fdl1BoyYosIrKiLM1JYLdAIl3AsgJEa2uxjGHd2g56e+9gjMftoQRr2+oAsCyr+iMi
+      IvNnaXanrQC3Lp0kW/KwPXjxxZdoqg1SN/gFx4720rp+N6vqIktSNBERv7DMMhpz6TiOuoBE
+      RObJY3UdgIiILB4FgIiID7met3SjgEREZPG5rkffaJIvLt9RAIiIrHSO61G0HfpjKb65Nkg8
+      mSMcDCgARESWO9f1yJccMvkSiUyBVK5IMlMgky+RzBbJFko4jodnDKFggEgoCCzhhWAiIvLw
+      PM9wc2CcMzeGiSdzuF65gQ9YFoGAhYWFZVG9hioYDBC8Zx0KABGRZcT1PK7fGefk1QEmMwXC
+      wQCBgEUgcG/z/v0UACIijzljDJ5nuHonzonuflK5EuFpXTkPSwEgIvIYc1yP7r4xTlzpJ1uw
+      CYeCj9zwT1EAiIg8hmzHpbt3jBPdA+SK5YY/PE8N/xQFgIjIY8D1PLIFm5HxDL0jCXqGJ8kV
+      bSIL0PBPUQCIiCwB1/PI5EsMxdP0jiQYGk+TzBQBCIUCBCxr3rp67kcBICKyCIwxpHMl7sSS
+      9MeSjExkmUznsSwIBQNYlkUkvLAN/r0UACIiC8gYw3gyx4nuAb4dmqxejLUUDf69FAAiIgvA
+      GEMskeXElQF6hicJBgKzXoy1lBQAIiLzxDOGZKbAndEkPcOT9AwnCAcDC3YS91EpAEREHpIx
+      hsl0odqvPxhPkyvYBAIWwYBFdIm7eL6PAkBE5AfyPMNEOk/faIK+0SQj4xnyRZtQZTqGx6Ff
+      fy4UACKyIk2/262p/GMwOK5HyXYpOS6FkkOh5JAvOuSLNkXbpVB0qn8rOS4lu/x/23Ep2A6e
+      Z4iEgwSscoMfjSzfZnT5llxEZBpjDK5nSGQK9MeS9I0myRZKlUbcw3ZciraD6xkwUJkkszp7
+      ZjBQ3ot/kGh4ZTWZK6s2IrIiGWPwKhOiuV55Lz5ftKt77hPpPEPjaUYnsuQqXTKh4HfveLvS
+      GvBHpa0hIkvKdctTIOSKNrmCTb5kk8mXyObLvxfsciM/1W1TtF1sx6vMdV9eR6gyxBKgZhl3
+      ySw2bSkRWVS245LKFRkcS3NnNMnIZIZktlDuqLfAwqqOopm6mcl099u7l7lTAIjIgnJcr9ov
+      X27ws2TyRQKWVb0iVl0zS0NbXUTmle26TCTz9I+lGBhLMTKRIVewZ8x5owb/8aB3QUQeie24
+      xBJZ+mMpBsdSjE5myRft8rQHy3BsvJ8oAERkTkqOS2wyS99ogv5YirFEFtvxCAas6sVQy3ls
+      vJ/oXRKRB3Jcj6Hx8pz1g2Mp4skcRdslEgpWRuJoD3+5UgCIyAwl22EgnqZ3uHyTktHJDBgI
+      h4NYlBt8DbVcGfQuiviYZwzFksNgPM3t4UmG4mliiWz5blThoE7YrnB6Z0V8whiDMZAv2QyO
+      pekbTTAYTzOeyoGh2m9fGw0vcUllsSgARFYw1/VI50sMjKXojyUZHs8wmckDVPrwtYfvZ3rn
+      RVYQx/VIZYsMjKW4E0syPJ4mlS1iBSzCGoMv99AnQWQZ8Ex5AjTH8XBcrzKFcWX+nGJ57pxk
+      tsjoRIZ0rjTzoiudsJX70CdDZAl4xuA45SmKp+aer06GVnTIFErVRj5bsCmWHBzXw64EgGdM
+      deriAGAFrOr89BqSKT+UAkDkEbmehzFUGuhyg54vOtWZLXOFciOeL9p3bz5Ssqt7865nMBgC
+      lYnPLGuqMec7k6EFAhaRgBp4mR8KAFlxpm4M4noenleeQ96p/N9xveqP7XjYrlvdq7YdtzrX
+      vOt62NOWdVwXxzWUbBfXu9twTy1rKq/ruF55tA1U98inxs7P1qAHgwGCas9liSgAZNkwxpDJ
+      l+gbTdIfS5HKFfA8Q8lxcd1yg287Ho7nVW//Zwxgyl0uU+ug0gZPNc4By6o+NsWqLnT3T7NN
+      TTzjOZZFOKTWXJYPBYA8VqYuTJrqE8/kS6RzJUYmMgzGU2RyJQIBqzof/GyN8t0G/cENtojf
+      KQBkQRljsF2PdK5IvuiQzhVJ50tk8yWKJZfcVL94qXzys1hyKnvpFsYYQsEAwUCgeucnjWgR
+      mT/6Nsm88oyhaDsMjaXpHU0yMJYknszheeUumKkG/X4331YDL7J49G2TR+J6HrmCzVA8TV/l
+      wqN4MocxENVcMiKPNX0zZU4c1yOTLzEYT5VvABJPkcgUsLAIh3Slqchyom+qzMozpjym3XbJ
+      FmziyRy9IwlGJzIks0WoXGkaUIMvsmzpm+tTU8MniyWHdL5EOlckmS2SzBZIZYukciWKJYei
+      7eB5pjLEMaArTUVWEAXAClU+GeuSL9qkc0VS2SKJTIF0vkQyUyCTL1GyXYq2W70K1bKs6j1c
+      p2hcu8jKpQBYATxjSGWLDI+n6RtNMpHKk84XKdnlq1yByr1a716dOkV78yL+pQBYRowpT0WQ
+      LdokMwWSlUZ/MJ4mnSsCzBhiqe4aEXkQBcBjxnE9UrkiiXSBRKbAZCZPKlcikyv305enPfDu
+      dtdUZoFUV42IzJUCYIm5rkcskaVnaJL+sRSjkxlsxyNgVaY7qMxqMNVtEwoGqtMgiIg8iscq
+      AExlwi74/om3lqOpWSpHJjLcHkkwEEsyOpnFdlyikRAW5S6cYEQNvIgsvMcmAIxb4qvPPqXg
+      GmpaN/DiwT3LPgSmJjYbmcjSOzLJ0Hia4fEMcPcqWe3Ri8hSeWwCINZ7lWD7Dt7Y18XXx94n
+      ltlGR2N0qYs1Z47rMTiW4ubgBEPxNOOp8jw44VCQQMCiRnPdiMhj4rFpjUZjcTbs3g1YbFzb
+      wthEflkFgON63BwY56srA0ym89U9fJ2cFZHH1WMTADDzxhvmgUs+PkqOy7U7cU52D5DKFYmG
+      Q9rLF5Fl4bFpqdpXtzIwMsb61vUMjqbYeLBmqYv0QIWSw+XbMc7fGiGVLRIOBTQnjogsK5aZ
+      PvRmCXlOkc+OHYNoDSbayqsvPF29SfYUx3EIhZa2kS2UHC5+O8r5WyNkCyVCwcCyP1ktIv70
+      2AQAgDHlG3OHQ6FZG9WlDADbcTlzY5jzt4YplNzvzJkjIrLcPFbjDy0rQCQcfiwb1t6RBJ9f
+      7MNxjfb6RWRFeKyOAGZTKpV4HIroeeV724qIrBSPfQBML16pVCIanTk0tFQqEb7nqMFxnPJc
+      OcG7QzBd18XzPMLh8Ix127ZNJBKZsc5isfid15ntsbksO5dyGmNmdHXdr5xzWfZRymnbNoFA
+      YEY5H7RsMBgkELh7cDlbOT3Pw3GceS3ng54fiUQeupyu68743My23KOucy51n60+c3n+bOV0
+      HAdgXstpjJn1O/uo5bz3O3O/cv7QZefjOxMKhWaU80HLPk7t1WM/bOX7ulpmOycQCHy3i2a2
+      x+73/B/62KM+3xgzazlny+T71fOHLvsojwWDwR+87WYzWzkty5r3cs5l2dnqdL/tee9j91vu
+      h67z3i/7XMv+qHWfzb2NFzx6Oeey7Fzeox/a/Trbsgux7UP3OWf5Q58/lzrN92fksT8CmO5+
+      qbZc3W/Pejmbba9tObvfkcpythLfo9mOAJaz2Y4AFsJjfwQw3Up6g+H+e9bL2Uqr0/2OVJaz
+      lfgeraSdKJjbUcGjWFZHACIiMn9WxjGgiIjM2YoKANu2q//3XIeS7c7p+cZzcWYM9TQz1vmw
+      jDtzvcVi8YHLe46DO+3AzFT6oR8Hjm1TLZpxKRbntn2MMffUZX628cPyXAfX++Hvzb0et/pM
+      57kOjld9s763bq7j4E3rD/Dce78PS8N1HLypgpnvr8ds7v3+2La9pMPLXcfGM0tfp2XZuZkc
+      7ePM1V7CwQBN7Rt4avcWAE588Smbtu4AIDPaS6ZxG8/v2YBTynPh3FmS2SLRhtW8cGg/hcQo
+      p85fxTOwedeTbF3fhikkeP/zC+zcsqHySjbf9k3w7psv/8CSGUbv3OLKrX4C4RoOPfcC9dEA
+      dnqE4xf62b15LQDnzl3ix3/9Nwi4NufPfEOm6AEGIk289PzTFCfucPxKjO3rV5VLUZhgPNfE
+      Ky88MY9b8XtqYlwunfmGeCpH85pNPLOvvF27z31NqHUj9ZEA5Ma4lqjj7cPlchUyCU6fPc/T
+      LxyhIQK3r19kIJYEIJdzePWtI0Q9m6MfHWXrtu2VV3K5fmuQ9979NQIL2eVpDMO917l6e4hg
+      pIZDz79IXRjSsduc682wZV15W5+72M1f//G75eX7bnCtZxAPi71PHyKXiDE4OFiuT9bh1beP
+      EHVnq88Q7737xsLWZ5r44G2u9gwAYBfz7HnmZda21lIav82nN7Ls3tgKuFy4eJPf+PHbYOc5
+      c+YsBbv8uQvVt/HCwSfIDF/nRF+BLWsaAchODmLXb+O5fZsWpR5jg7e5Vq1HkT3PHGZtaz3J
+      oetcHjV0rWkE43H+yk1+8723AHDtIpfPfUPL5qfpWtPI5OgdLt/oA8ApFdn65HN0rWni1GfH
+      adrQxdRZxOvXrvHaO+/REFnYcwej/be40TsMQKlQ5MnnX2JNUy0TfVe4nqxh4+pa8GwuXL/D
+      X3vndTAefbe66RmI4ZkAB547jEkP032rv7pddh14gfWrGzj56TFaN26pNuLd3dd498e/QTT4
+      wz94yzIABu/0smXPAda31mBNG8lgO051lFApFCYcKb/d+VSCzq17OdDWRPfXR7kdL9DzzSle
+      evNdaiybX/7qY7rWv0fQgvqmNnbu3FlZY4HBweQPLpdbSHLqygDvvHUEjIs11QIYD0OgWrZw
+      NEwQMIEQ+54+hAEyY72c7c1jAQHL0Ny2jp07y1+8QmaAVHfuEbbY3N25/A2lpi5ee2btjD1a
+      x3GojUSJRgNghwiHy6NjXDvPqVPnyWYmKDjQEIGN2/awfosBr8RfffAZEcozvkbrmqdtY5vB
+      wfiCN5ZOfoIzN0Z5583XwLUJVL73xrhgharvTbTymcG45NwQL738Kpad4KMvzvHW64fZsGHD
+      zPpYS1Of6VZ1buT59vWA4bOjH1JXM1UHD2MFK3VzCUfCBAATquGpg4cAmOzv5lqy/B5aGFZ3
+      bGTnjjUAJIY9bicWb+DF6ql6GI/Pj31EbU20Ug0HAjWVepi77xEel86eplDM4iRydK1ppLlt
+      Pc+3dgKGr459QH1DXbluVpitO3dSW3nmeGyI0CKcZG1bt5nWjk1gPD45+hG10UilTjYEm8p1
+      8gJEpwa4uDalYAM/evkJvPwIx09e4K0jB3l+9Towhi+OfUBdXbkWViDK1p07mYXMk+AAAA3b
+      SURBVJo2c2R4kOAc67QsAyAeH6cmMkDAXsXG9R3Vx61giJaWlvL/U3WkK483tq2lEXCKWXpj
+      WX50MEKxYxVXr16jPujQsKqj2heWz6WJx+OV30q4cziiit+5Qd2qdi6eO0tT+zq2da2r/q2m
+      rqFatqlZQy3LIhyJAIbuqz0cOPxGdUrsbDpBPF7+8JZyCTwWdxji9YEJduxo5cyZETbv2EVb
+      ZRikZQVoamqmuTYIgQwkyssHQjX86MgRTn36q+o6QqHyh7rv8hk2P/lsdXK/UiE3bRs7lJy5
+      ddU9jJFvr9LU3smFs2do7djAlo2d1b/VNTRW35twKDBVIbZt2wbG0HP9WxpXt1dHA/VdOs2W
+      /YfuX59F7jYJBENEguWdiEBrF021d7/WtfVTdXOIVO5NYVlWZVirx6Ubg7z4a+9UP3fpVIJ4
+      vLwNUokkhuYlqEcftGyieVo96qfeI+NNu4OexVPPvUis5ywD7tQ6gkSCQexMjHxkDW115XV4
+      rs14PF5tLLP5uXe5PIxgMEQwCMnhW0Tat9EQvXvEUd/QREtLA7ilu3UKRdmxdTMYw9XrN1nV
+      ubm6XfKJQdyGdbTWltfhOiUm4vFqy5ArlOZcvmUZAAdfeo10JsfYUA8Xr97ivTd/RABwSwVG
+      R0cBSE8koH1t9TkTQ9/y6TfdvHjkbZqjQUYjYUr5AsGgSygUwVDZO62tp7W1tfKsInM4miKf
+      z5MrhHjm6Z3cOP8lF50gT23rwPM8MqnJatlyhZl9xLmJQfLRNayqv7u3VVffVC1HIZwjMFKY
+      62Z6JIVsCjfUwPatqzj+4a9462/8TepDFo5dIj4WoxANQGYCKHed3HfImrG53Jvg7V9vrz4U
+      jtZM28bOotw0J5/Pk3dtntq7k6unPiXvvcjertV4rktqcoLR0XL5C6W7YeQ5Rb48fpRw+zZe
+      Orjrbn36krz9623T6lM7sz5LcotPw/kLV3nq8K9VG3PXdcgks5W6ueRLM/uMk0M3CbVtozY8
+      s1GaqotVbCSZWqTiTzGG8xe6eXpGPVySk+OM1thgPIrVc3sW9/vYnT5xmmcOv1X93QqEaGlt
+      rR4B1NUs4g6V8Th/6SYHXn5zZp2ScUZD2fJev3N3p8Ep5vj02FFatzzJod2V7jdjOHvqAgdf
+      ulunQDBMS2srU1dG1UbnfrS2DAPAUN/YQkNTK51r1zH8V7/E8SBiGUywhq6uLgASZOmpfN7z
+      iWG+uNDHez9+j0jly3nzToz33vsNwPD5h78kbR+gGQhY0y/MmtsXeVV7O41ulObmJvbs28PZ
+      b8dhWweJiQm6tu2iq6vcaNzu6ZlWHcP5c5d46rnXmf5ZtqZdIBZcggalpamJNevW0RSx2LK2
+      iVTOpb4xSN4OsH/b5nI/YzJAz60H73UMXDtHx479hKb1iVgztrHHYvSWtK1pZzTdTHNTE3v3
+      7+ZC3wR0rWZyIs2WXXvL/ctAT89toDwz7defHGXD/pfYvKal2tAMXD1Hx86n7qmPtej1uVdu
+      YoBcZOZORGx0gl17D9HVVgM43K70rwNgDGcu3OTZ19+ZUd7pFyYGl+BCsXxikGy4bUY9xiey
+      7Nx9iA0tNeC59PT2P3AdTn6ccbeRw/V3m7ep9yg47ffFkhnrw65fO+PILDaeZ8/Tz9JRHwK3
+      RE9/DCh3SX527Ch7Dr/B2pb66ueulI2RsFpZXTezToFHrNMyDACXM198RpYoXjFFfec2wgGY
+      HLpFx5a9AJSKBXL5PETKG6T/RjfZYoHPPzkOwP7nXmZTWwMfHf+UhpBLNtJGYxiMA7lMklgs
+      VnmtIs4cuoAaO3fhnvvPfPF1nFR8lIMvv4kxLnfiefYfWgWeS75kUyzdPQIoZsbIhlaz5p7b
+      X6aTE8Ri5QPWYnYCj8W9Qc6hQ0/zy7/8SzatayOWjfJkY4hcYpi69i6iQQu7VKSUz2EqH6FC
+      MsaXpy8xcLuX0cIxdux6gt2b19DdO8mRtw5V12uAYj4zbRs7FBehC6ilax+5X/ycL7PDJGIj
+      HHrtbYxbIpaFZ1c3VEaN2ZTs8l6DZxe51TdAwTpDD9Da2cXBJzZzpW+S179Tn+yi12cmw+VL
+      13j64KvVxtx4DoPZIC+ujmJch0KpMKOrLTveh9W6mabozCYgmRhnqiqpiUlMYPG6gMBw6UI3
+      B559rVoPzykyaUfY2RTFcxyKdhF76j1yipw68TUjw3dIeYPY6W0898xeLp46y8HDr8xYs+uU
+      GIvFqt+idHaxjqgNFy/f4OALr0+rU4G0Vc+TdUFcx6ZUzGO75ffGyU7SOxLHnD3BVWDNph08
+      uWMT50+d59Dh1++pU5GxWKx6BJB5mG4ts0wVCzlTKNrGGGNcu2AGBkeN53nlv2WT5vixYyaR
+      Kz1wHXYxb3L5YvV3p5Axg6Pj05cwIyPxOZXL8zyTSadMyXGNMcZMjo2YZLYw9Ucz1HPZfHH6
+      6gPXUUiNm9HJzN1SlDJmLJ6eUznmg+uUTCqVMZ5njOvaZnBgyDiVbewUc+bL40fNSCI3p3V6
+      rmMGBoemPeKYkZHYPJb6Aa9deW9sxzXGeCY+MmQyhVLlb665feW0OXXl9tzW6dhLVp8HiY8M
+      mEyh/P3wPNfcvnrWnLrc88DnZCdGTTxdqP5eyCXMZDK/oOV8MM/EhgZNrni3HjcvnjTnrvfP
+      eU1D/f3Gmfb7WGzUOK43T+WcC8+MDg6YvF0ujec65tq5r83FW0Pf87zvGrynTqOjI9U28IfS
+      lcAiIj61oi4EExGRH04BICLiUwoAERGfUgCIiPiUAkBExKcUACIiPqUAEBHxKQWAiPha7/VL
+      nD57lrOVn88/PsZwIl/+ozEc//lPuNI/QWJ0gGTepZBNMzo6ysjICMMDvZy7fKM8o+/4ILeH
+      JjDAxO2z/OKzS9XXMMZgjMHzvOqc/ec+/YihjF39+43zJ7kzlqJQKFR/evv6cIop/vRP/y32
+      tEu2suN9/NE/+yN+9vNfkbc9HLt8pfPU1d7GGDLJCcYTqerreZ5LYiJOOleslkcBICK+Nnzj
+      Op27D3LwYPmnNpQnVypPzpYc6uaLWzn2bGilqaWBjz/+FLeUJ1zfxOeffEJtfQ1U5kxqWNXG
+      t9eugDEc++wMTaEcmcp64ncu8NGn5/hPP/0zhhM5isUiY4MTFO00BccjdecKtzMWmYkJ0ukU
+      yWSSVDrN19+cIhhp5Ol1hv/w8d1Ace084ZYN/NZvvkuy9xz/4z/4n/jXf/qv+W9/5+8zmnU4
+      9/F/4Hf/1z/kj/73f8j/+/43UEzyT3//f+aP/+W/4h/+g7/HR2e+xUneUgCIiN8ZPOPheZWf
+      aXvan/7ql7z41jsEMBScEM8deIKaulqOfXCUYChI362bNLa2YVyH9OQkm7fvYujGeTr3v8IL
+      +7fyn376U2KJLMYtEa1vpakpysidPgYHBxlPTDI0OEgmV8Ip5Ag2dJIdvM5AbILjH75PqL6V
+      xoY6LMvimTd+zOmP/oLZpm1o7NjGH/3xv+D3/5ff54VNIW4NJfj5L47ze3/4z/mDf/z7nHj/
+      L8gR5e/93j/hn/yj/43f+a/f5fzFbiYH+xUAIuJzxmNsZJjh4fLPxGS6+qfu/iT7trQBHvFY
+      jPc/+piCDXt3byWfy1LTtp5YzzUc18NODvPF6cvkQquJ9V4BAqxd08K3t8uzlw7332Y4nqG5
+      xmM46dDR1sbOvftoa7o70WMhkyKdzZHN5wkFp838GW1llZtmfJY7w9Y3tRA2Rf6/f/t/08s2
+      Dm5qYCzn0dEUJtrYQrOVI+vWsKqxhotffcC/+tlX/M33jpBM55fjbKAiIvPICtKxdj3ry/df
+      YvjbpuqfSnhEAgGwQmzq6qKx7gKuXaS9cx2WFWT1qtV0rm4nGAqzqqWJugZY37maE19NcuLk
+      WfY88xLr25uJ9XzD2o1bKMUmWb1xB2MXL85alFCknp37nyI3eHNmEYGaENgO35nD2S0k+b/+
+      4A9Ye+hd/vHfeZ2gsakJBii6hqhrk3ctQkGP93/6J3zdD//oD/8p7U210PGejgBExOeMRy6b
+      IZMp/+Sn3VlrXV2EkfTdaZbtfIqr396huaWF2tpampqbaW5qJBiwMMDtq2fpHU1CIMzLr79J
+      kzvJeOXpE2MjpDIFLCvECy8cYjZ1TQ0kxkapbWln+u2KjXEYKwVYNcus8Je++CXjNZt5duda
+      bl6/SqrocWBnG794/0tOfPIh4bV7iGb6+Nmxy/zmu68wNnCb/pFxzn91VEcAIuJvgWgNlmsz
+      devrUKSWaOXWoD966QCff3mO3f/Fy4Ahm82yd/9TRCr3xJjOCdaysWsTuzd3cvrjFB9+8D6J
+      0Tvsfe232LZ6C6+81EB95GkiNQESo3c4c6OXZyvPLd/MxfDUi+X7GGxbv4YrZz9jJFUe1TNx
+      +ywNmw8w864hZc1rt/HEhiLfnDwJwMut6/nbv/33+fc//XPOmXr+h9/5O1ikeOOVQ1w8cwqA
+      riee5dmdu9F00CLia47jEAyF7t6wxfOwrACWBcbJ8cf/x7/gv/nvfpeOxjCeZwhURv2kUyka
+      mppmuQOcwbFtbMfFsgJEo9FZb12ZyWSor6/Hsiw8p4RtgkSn3Z7TtYuUvAC1EfiX//yf8d5v
+      /y5b2sr9VKmRa/yff/ILfutv/Zg9u3cRnsu9a6dRAIiIPEB2cpSEU8P69sW8O9pdTiFF70iG
+      7ZvX3X2smOHc2Qs4oTqeOfAUkdDD9eYrAEREfEongUVEfOr/B5JpZq5cQVjQAAAAAElFTkSu
+      QmCC
+    </thumbnail>
+  </thumbnails>
+</workbook>
